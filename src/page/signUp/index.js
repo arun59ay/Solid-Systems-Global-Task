@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactFormInputValidation from "react-form-input-validation";
 import './style.scss';
 import {withRouter} from 'react-router-dom';
@@ -52,7 +52,7 @@ class SignUp extends React.Component {
                             onBlur={this.form.handleBlurEvent}
                             onChange={this.form.handleChangeEvent}
                             value={this.state.fields.name}
-                            autocomplete="off"
+                            autoComplete="off"
                         />
                     </label>
                     <label className="error">
@@ -69,7 +69,7 @@ class SignUp extends React.Component {
                             onBlur={this.form.handleBlurEvent}
                             onChange={this.form.handleChangeEvent}
                             value={this.state.fields.email}
-                            autocomplete="off"
+                            autoComplete="off"
                         />
                     </label>
                     <label className="error">
@@ -86,7 +86,7 @@ class SignUp extends React.Component {
                             onBlur={this.form.handleBlurEvent}
                             onChange={this.form.handleChangeEvent}
                             value={this.state.fields.password}
-                            autocomplete="off"
+                            autoComplete="off"
                         />
                     </label>
                     <label className="error">
@@ -103,7 +103,7 @@ class SignUp extends React.Component {
                             onBlur={this.form.handleBlurEvent}
                             onChange={this.form.handleChangeEvent}
                             value={this.state.fields.confirmPassword}
-                            autocomplete="off"
+                            autoComplete="off"
                         />
                     </label>
                     <label className="error">

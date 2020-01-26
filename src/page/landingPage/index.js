@@ -11,8 +11,8 @@ export default class LandingPage extends Component {
     constructor(props){
         super(props);
         this.state={
-            signUp:true,
-            login:false
+            signUp:false,
+            login:true
         }
     }
     
@@ -30,7 +30,6 @@ export default class LandingPage extends Component {
                         <Card signup={this.state.signUp} login={this.state.login} handleClick={this.onClickHandle}></Card>
                     </div>
                 </div>
-                {/* <Dashboard/> */}
             </React.Fragment>
         )
     }

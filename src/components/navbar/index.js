@@ -13,7 +13,6 @@ export default class Navbar extends Component {
             <React.Fragment>
                 <div className="nav-bar">
                     <div>
-                        {/* <button  className="btn btn-primary">#</button> */}
                         <div className='menu-icon' onClick={() => this.props.handleNavBar("navbar")}>
                             <img src={this.props.handleNavBar ? list : close}
                                 width='22' height='18' alt="" />

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Card from '../../components/card/index';
+import React from 'react';
 import ReactFormInputValidation from "react-form-input-validation";
 import './style.scss';
 import {withRouter} from 'react-router-dom';
@@ -21,8 +20,6 @@ import {withRouter} from 'react-router-dom';
     });
     this.form.onformsubmit = (fields) => {
         console.log( localStorage.getItem('email'),".....");
-        // const email=        localStorage.getItem('email');
-        // const password=        localStorage.getItem('password');
         if((localStorage.getItem('email') === null) && (localStorage.getItem("password") === null)) return alert("not registered please registered first");
     else if(localStorage.getItem('email') !== fields.email) return alert("email not matched");
     else if(localStorage.getItem("password") !== fields.password) return alert("password not matched")
@@ -30,13 +27,12 @@ import {withRouter} from 'react-router-dom';
         console.log("ok tested")
 this.props.history.push('/dashboard')
     }
-
-    // if((localStorage.getItem('email') !== null) && (localStorage.getItem("password")))
     }
   }
 
   componentDidMount(){
       console.log(localStorage.getItem('email'),".....email", localStorage.getItem("password"));
+   
   }
  
   render() {
@@ -53,7 +49,7 @@ this.props.history.push('/dashboard')
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.email}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </label>
               <label className="error">
@@ -70,7 +66,7 @@ this.props.history.push('/dashboard')
                   onBlur={this.form.handleBlurEvent}
                   onChange={this.form.handleChangeEvent}
                   value={this.state.fields.password}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </label>
               <label className="error">

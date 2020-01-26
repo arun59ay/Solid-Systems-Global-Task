@@ -13,7 +13,7 @@ export default class SideBar extends Component {
                     <div className="nav-content">Qbook Admin Panel</div>
                     <div>
                         <a href="/">
-                             <img src={require('../../assets/images/home-run.png' )} width="16" height="16" />
+                             <img src={require('../../assets/images/home-run.png' )} width="16" height="16" alt="" />
                          <div className="pl-2">Dashboard</div>
                         </a>
                     </div>

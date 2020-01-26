@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import LandingPage from './page/landingPage/index';
 import 'bootstrap/dist/css/bootstrap.css';
 import App from './app';
 

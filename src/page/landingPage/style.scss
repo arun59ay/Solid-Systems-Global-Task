@@ -10,5 +10,11 @@
     background-size: cover;
     overflow: hidden;
     background-image: url(../../assets/images/bg-abstract-resized.png);
+    @media screen and (max-width: 767px) and (min-width: 320px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media screen and (max-width: 1024px) and (min-width: 786px){
+        grid-template-columns: repeat(1, 1fr 1fr);
+    }
 }
 

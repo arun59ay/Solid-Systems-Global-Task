@@ -10,11 +10,24 @@ box-shadow: 0 0 6px 0 rgba(0, 0, 0, .26);
 background: #fff;
 border-radius: 4px;
 padding: 15px;
+@media screen and (max-width: 767px) and (min-width: 320px){
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    margin-bottom: 20px;
+}
 `;
 const GirdCard = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-column-gap: 20px;
+@media screen and (max-width: 767px) and (min-width: 320px){
+    grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
 `;
 export default class InfoCard extends Component {
     constructor(props) {

@@ -18,18 +18,18 @@ export default class Card extends Component {
                     {login ? (
                         <div>
                             <Login></Login>
-                            <div className="mt-2">
+                            <div className="mt-2 d-flex">
                                 <span>click here to</span>
-                                <a onClick={() => handleClick("signup")} href="javascript:void(0)" className="card-link"> Sign Up?</a>
+                                <div role="link" onClick={() => handleClick("signup")} className="card-link ml-1"> Sign Up?</div>
                             </div>
                         </div>
                     ) : null}
                     {signup ? (
                         <div>
                             <SignUp></SignUp>
-                            <div className="mt-2">
+                            <div className="mt-2 d-flex">
                                 <span>click here to</span>
-                                <a onClick={() => handleClick("login")} href="javascript:void(0)" className="card-link"> Login</a>
+                                <div role="link" onClick={() => handleClick("login")} href="0" className="card-link ml-1"> Login</div>
                             </div>
                         </div>
                     ) : null}
